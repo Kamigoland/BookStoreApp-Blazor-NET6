@@ -8,7 +8,7 @@ namespace BookStoreApp.API.Models.Book
         [StringLength(50)]
         public string Title { get; set; }
         [Required]
-        [Range(10800, int.MaxValue)]
+        [Range(1800, int.MaxValue)]
         public int Year { get; set; }
         [Required]
         public string Isbn { get; set; }
