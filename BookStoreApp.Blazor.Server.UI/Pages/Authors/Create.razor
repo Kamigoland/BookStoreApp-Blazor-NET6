@@ -21,7 +21,7 @@
     <br />
     <div class="form-group">
         <label for="bio">Biography</label>
-        <InputText @bind-Value="Author.Bio" class="form-control" id="bio" />
+        <InputTextArea @bind-Value="Author.Bio" class="form-control" id="bio" />
         <ValidationMessage For="@(() => Author.Bio)" />
     </div>
     <br />
@@ -30,7 +30,7 @@
         <span class="oi oi-pencil"></span>
         Create Author
     </button>
-    <button @onclick="BackToList" class="btn btn-outline-secondary">
+    <button @onclick="BackToList" class="btn btn-outline-secondary" type="button">
         <span class="oi oi-media-skip-backward"></span>
         Back To List
     </button>
